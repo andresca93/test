@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+  <body ng-controller="AppController as ctl">
+  	<%= render :partial => '/layouts/navbar' %>
     <%= yield %>
   </body>
 </html>
