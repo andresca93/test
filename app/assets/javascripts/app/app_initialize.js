@@ -1,5 +1,5 @@
 app.initialize = function(ctl, $scope){
-	$(document).ready(function(){
+	$(function(){
 		$('.button-collapse').sideNav();
 	});
 };
