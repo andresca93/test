@@ -15,7 +15,6 @@
 //= require angular/angular
 //= require materialize
 //= require turbolinks
-//= require_tree .
 // ANGULAR
 //= require app/app.js
 //= require app/app_initialize.js

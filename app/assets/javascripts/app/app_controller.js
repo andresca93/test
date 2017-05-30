@@ -1,5 +1,4 @@
-app.controller('AppController', function($q, $scope, $localStorage) {
+app.controller('AppController', function($q, $scope) {
   var ctl = this;
-
-  app.initialize(ctl, $scope, $localStorage);
+  app.initialize(ctl, $scope);
 });

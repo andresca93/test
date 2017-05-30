@@ -2575,3 +2575,509 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-29 17:26:20 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-29 17:27:34 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 422ms (Views: 396.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:06 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:06 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:06 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:06 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:41:43 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 260ms (Views: 257.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:42:28 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 249ms (Views: 245.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 17:42:34 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:20:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:20:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 714ms (Views: 694.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:20:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:20:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:23:22 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 156ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:23:26 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:23:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:23:28 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:23:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:24:29 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:24:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 412ms (Views: 410.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:24:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:25:55 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:25:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:27:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 269ms (Views: 266.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:27:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/" for 127.0.0.1 at 2017-05-30 13:28:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (7.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:28:43 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:28:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/" for 127.0.0.1 at 2017-05-30 13:28:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (6.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:29:04 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:29:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:29:08 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:29:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-05-30 13:29:11 +0200
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-05-30 13:29:15 +0200
+Started GET "/users/auth/facebook/callback?code=AQC0XVWMxgvKVjwpe29lWsuVtK-QIzHSf9PspKb2m1qMuSY1rq-S7v0msfv0PT-HGLu5fbi2IajxSaKamqarhQbg3qq1ukMPP3_veuBYd4hgaQUXCIv2mRaLSn0P57cxNr4gRUmZ4hWJ-72eU4UmMZ9aazaUWw0TbJ4d5BYz8aGT7bvrEJ7-oIJzWFkZG25Gs9ocgHaVBr9RHlhQsjsgykYbj3-2Lh7OoEsW5ULdxoIHitTyqVNGSPtYLsT55o2vzLzRqpJ2BttPb9xXFIpbvmUh2zOQPBOE83LQOq5_ZG0ggDbawOIB3iLBG8Ha8U-4cRc&state=9abfd4aeb224a9ba03f60793f1c55f5ac7278da0d02b26cd" for 127.0.0.1 at 2017-05-30 13:29:15 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQC0XVWMxgvKVjwpe29lWsuVtK-QIzHSf9PspKb2m1qMuSY1rq-S7v0msfv0PT-HGLu5fbi2IajxSaKamqarhQbg3qq1ukMPP3_veuBYd4hgaQUXCIv2mRaLSn0P57cxNr4gRUmZ4hWJ-72eU4UmMZ9aazaUWw0TbJ4d5BYz8aGT7bvrEJ7-oIJzWFkZG25Gs9ocgHaVBr9RHlhQsjsgykYbj3-2Lh7OoEsW5ULdxoIHitTyqVNGSPtYLsT55o2vzLzRqpJ2BttPb9xXFIpbvmUh2zOQPBOE83LQOq5_ZG0ggDbawOIB3iLBG8Ha8U-4cRc", "state"=>"9abfd4aeb224a9ba03f60793f1c55f5ac7278da0d02b26cd"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10211244432418247"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-05-30 11:32:03.499038"], ["sign_in_count", 2], ["updated_at", "2017-05-30 11:32:03.501747"], ["id", 1]]
+  [1m[35m (56.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 163344ms (ActiveRecord: 57.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:32:03 +0200
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:32:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-05-30 13:32:10 +0200
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-05-30 13:32:12 +0200
+Started GET "/users/auth/facebook/callback?code=AQCfImwYRYJnNZEB8K4YX-kA2fMCwbg2wVImpIhrMOog0GPLfESQs8mGr2ewYmHkuaSYJKogiqJe1mhNOALWC732YKyFaZgj-qD4x6mK7KgPb-csGfYGsStyzSeRPS2qzrsLmW4NwUru8fIVWx2KIa94E8UKtcSDv9FaFDIRFgi3z1KvxCTBOQj2qepFVx0BqXD3xYPVxFVrmxEVDPXOdafVSSPWANa0Dst9jUykPEAM1iXAj5Cb6tu_wu87b2BBDqVGPWuxQATyfV9jlCbCh0dXeCIt0YMlahl6N0-fUz1rDvJRvtisDZhKsA1Z5ZoyA0g&state=a29e852d16f1ef25c082f4de8774d01502c5469ad7874232" for 127.0.0.1 at 2017-05-30 13:32:16 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCfImwYRYJnNZEB8K4YX-kA2fMCwbg2wVImpIhrMOog0GPLfESQs8mGr2ewYmHkuaSYJKogiqJe1mhNOALWC732YKyFaZgj-qD4x6mK7KgPb-csGfYGsStyzSeRPS2qzrsLmW4NwUru8fIVWx2KIa94E8UKtcSDv9FaFDIRFgi3z1KvxCTBOQj2qepFVx0BqXD3xYPVxFVrmxEVDPXOdafVSSPWANa0Dst9jUykPEAM1iXAj5Cb6tu_wu87b2BBDqVGPWuxQATyfV9jlCbCh0dXeCIt0YMlahl6N0-fUz1rDvJRvtisDZhKsA1Z5ZoyA0g", "state"=>"a29e852d16f1ef25c082f4de8774d01502c5469ad7874232"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10211244432418247"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-05-30 11:32:26.397400"], ["last_sign_in_at", "2017-05-30 11:32:03.499038"], ["sign_in_count", 3], ["updated_at", "2017-05-30 11:32:26.398901"], ["id", 1]]
+  [1m[35m (59.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 89ms (ActiveRecord: 61.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-30 13:32:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:32:26 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/auth/google_oauth2/callback" for 127.0.0.1 at 2017-05-30 13:33:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/auth/google_oauth2/callback"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (10.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.6ms)
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-05-30 13:33:26 +0200
+Started GET "/users/auth/facebook/callback?code=AQC01dZGip91LGZNx_yGwkSvcvV5O4q_fDO65lLYYFsaBHOATtBtnAMPwY_GFlKi54mHCPx23xfRUN0Cf90xW0kmftcRL25-MRm89dFbYhoVMR4WyQb1jtxta29KbKQDyhDYEL4DGX6TWagMUbfgnYhCyhRakC4itJmCdRpQP1FIIdnH8OVdNvNoaBRoSimmKyXbkpqkl4lOJxb-_bkKqpSGHmw75wbDeWfydpivBM90TLwBRRlDh3kHdOzujjeXNz3DN0UJLxiC6AbTNl4Gs0pbl1hOEbU36ei7GR8gCntfAvEBhka2LjzuGd5QIWNUrIU&state=d47bdf2e2e5fa3e358d8d8d555e5a1c4aebd210c5727be08" for 127.0.0.1 at 2017-05-30 13:33:27 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQC01dZGip91LGZNx_yGwkSvcvV5O4q_fDO65lLYYFsaBHOATtBtnAMPwY_GFlKi54mHCPx23xfRUN0Cf90xW0kmftcRL25-MRm89dFbYhoVMR4WyQb1jtxta29KbKQDyhDYEL4DGX6TWagMUbfgnYhCyhRakC4itJmCdRpQP1FIIdnH8OVdNvNoaBRoSimmKyXbkpqkl4lOJxb-_bkKqpSGHmw75wbDeWfydpivBM90TLwBRRlDh3kHdOzujjeXNz3DN0UJLxiC6AbTNl4Gs0pbl1hOEbU36ei7GR8gCntfAvEBhka2LjzuGd5QIWNUrIU", "state"=>"d47bdf2e2e5fa3e358d8d8d555e5a1c4aebd210c5727be08"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10211244432418247"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 13:33:28 +0200
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+

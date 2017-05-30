@@ -1,4 +1,4 @@
-app.initialize = function(ctl, $scope, $localStorage){
+app.initialize = function(ctl, $scope){
 	$(document).ready(function(){
 		$('.button-collapse').sideNav();
 	});
