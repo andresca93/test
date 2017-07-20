@@ -17,4 +17,6 @@
 //
 //  ANGULAR
 //= require application/app_controller.js
+//= require application/app_azioni_forms.js
 //= require application/app_azioni_users.js
+//= require application/app_azioni_routes.js

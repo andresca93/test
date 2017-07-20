@@ -18,7 +18,7 @@ app.controller('AppCtrl', function($scope, $http) {
 		ctl.current_elem = new_elem;
 		if (new_elem == "index") {
 			// imposto variabili per index
-		} else if (new_elem = "profile") {
+		} else if (new_elem == "profile") {
 			// imposto variabili per profilo
 		}
 		console.log("current_elem: ", new_elem);
@@ -27,7 +27,9 @@ app.controller('AppCtrl', function($scope, $http) {
 	app.changeCurrentElement = ctl.changeCurrentElement;
 
 	// MODULI
+	app.azioni_forms(ctl, $scope);
 	app.azioni_users(ctl, $scope, $http);
+	app.azioni_routes(ctl, $scope, $http);
 
 
 });

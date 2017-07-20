@@ -8,4 +8,9 @@ Rails.application.routes.draw do
     get :profile,    :on => :collection
     get :user_check, :on => :collection
   end
+
+  resources :route, :only => [:index] do
+    get :new_route, :on => :collection
+  end
+
 end

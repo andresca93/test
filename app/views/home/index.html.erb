@@ -1,10 +1,11 @@
 <div class="container">
 	<div id="#index" ng-if="ctl.current_elem == 'index'">
-		index
 		<%= render :partial => 'index' %>
 	</div>
 	<div id="#profile" ng-if="ctl.current_elem == 'profile'">
-		profilo
 		<%= render :partial => '/users/profile' %>
+	</div>
+	<div id="#new_route" ng-if="ctl.current_elem == 'new_route'">
+		<%= render :partial => '/route/new_route' %>
 	</div>
 </div>

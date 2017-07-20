@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
 
+  has_many :routes
+
   def self.get_or_create_by_facebook(auth)
     return nil unless auth.info.email
     if result = ::User.where(:fb_uid => auth.uid).first
