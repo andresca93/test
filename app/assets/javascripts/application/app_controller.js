@@ -30,6 +30,7 @@ app.controller('AppCtrl', function($scope, $http) {
 	app.azioni_forms(ctl, $scope);
 	app.azioni_users(ctl, $scope, $http);
 	app.azioni_routes(ctl, $scope, $http);
+	app.azioni_stages(ctl, $scope, $http);
 
 
 });

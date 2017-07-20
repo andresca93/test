@@ -6248,3 +6248,345 @@ Processing by UsersController#user_check as HTML
 Completed 200 OK in 40ms (Views: 1.5ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-20 15:30:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.9ms)
+  Rendered users/_profile.html.erb (0.7ms)
+  Rendered route/_new_route.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 15:30:37 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:03:53 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (0.4ms)
+  Rendered route/_new_route.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:03:53 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:06:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (0.5ms)
+  Rendered route/_new_route.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 111ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:06:36 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:14:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (0.7ms)
+  Rendered route/_new_route.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:14:47 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-07-20 16:15:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 87ms (Views: 37.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:15:15 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-07-20 16:15:17 +0200
+Started GET "/users/auth/facebook/callback?code=AQB5DUXyUVii8Wfqj90R6ANDdskFvPuYRiUd1D6sz0RvtynEWG4qCaDTxRQqzmncL2u3nPsA9X8F7_E7hoIYN4hxgyyajANZ5t6Q8l2y756HD7uYu2Aspg0b_0nf3txOv4RPD1jG8xTW2-ZeKmW9OQhIl6sRd6ozeC8_EjzgD4PpYBIQOrIKHRwXgzBxrogEmjoI6YoajaTfii31ej4oyy4zn7U7O54vQ9_gm2z0Vo_EfimUf0cI4yYK1NwsWzvts_cEwYfvfoZ83YBIe1vjzMc8a17UVTZZjbIVcPmyW8u4iPFe2QTqGS5R2Ajx4WY2cmc&state=1e3c101cc1afea8e66584b54e264ebfeab66df7f40685112" for 127.0.0.1 at 2017-07-20 16:15:20 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQB5DUXyUVii8Wfqj90R6ANDdskFvPuYRiUd1D6sz0RvtynEWG4qCaDTxRQqzmncL2u3nPsA9X8F7_E7hoIYN4hxgyyajANZ5t6Q8l2y756HD7uYu2Aspg0b_0nf3txOv4RPD1jG8xTW2-ZeKmW9OQhIl6sRd6ozeC8_EjzgD4PpYBIQOrIKHRwXgzBxrogEmjoI6YoajaTfii31ej4oyy4zn7U7O54vQ9_gm2z0Vo_EfimUf0cI4yYK1NwsWzvts_cEwYfvfoZ83YBIe1vjzMc8a17UVTZZjbIVcPmyW8u4iPFe2QTqGS5R2Ajx4WY2cmc", "state"=>"1e3c101cc1afea8e66584b54e264ebfeab66df7f40685112"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."fb_uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["fb_uid", "10211244432418247"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-07-20 14:15:21.371556"], ["last_sign_in_at", "2017-07-20 10:38:05.082409"], ["sign_in_count", 14], ["updated_at", "2017-07-20 14:15:21.372660"], ["id", 1]]
+  [1m[35m (61.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 62.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:15:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (0.5ms)
+  Rendered route/_new_route.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:15:21 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/profile" for 127.0.0.1 at 2017-07-20 16:21:55 +0200
+Processing by UsersController#profile as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 36ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#profile is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.4) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.4) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.4) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.4) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.4) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.4) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.4) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.4) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.4) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.4) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.3ms)
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:22:01 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.5ms)
+  Rendered users/_profile.html.erb (0.7ms)
+  Rendered route/_new_route.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:22:01 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-07-20 16:22:15 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4wjZjKWMSaQ5i9VIcPzSjdVnQGjfLVFh6zTLdD0Ew8y01WhbVhWFh3kHO0vPuHv67jmoPBAR4hn0nYcGo9oaDQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:22:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (0.5ms)
+  Rendered route/_new_route.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:22:15 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-07-20 16:22:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:22:23 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:25:58 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.8ms)
+  Rendered users/_profile.html.erb (0.9ms)
+  Rendered users/_unauth_user.html.erb (0.3ms)
+  Rendered route/_new_route.html.erb (1.7ms)
+  Rendered home/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:25:58 +0200
+Processing by UsersController#user_check as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-07-20 16:26:03 +0200
+Started GET "/users/auth/facebook/callback?code=AQAZdw8ZscVS5dD38qCO1E_Ja9Ys-THemXA251LZKwAitu1IVZnRdcf11vmzn0yerNcMYMHMT2zHnt6gllI_lEIT02iWa_546pKzoEnRrJatJI4biJGAJVb0m7FTmzZm_34zCaTWNezm7iIXRJITcRGAJYHNcJrmuLLXPKYZHKqMy6Vz4Y0soHwYxCYWt9Ko2sVwvq9kb4TWOoCki65-e7DDXS67RYUtM4kMHXXpB-Jqb9r75BF5GYw64M6m5UTDa-yoB7EHRx_EDG6Np3ftVIyvbIoFQ-3U8tE5oeFoKxbVHMTPSqv4t0DyHNw-p_rOIsA&state=d33048139dbaedd55887d2d0260862f2bb330e5a815b6e41" for 127.0.0.1 at 2017-07-20 16:26:03 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAZdw8ZscVS5dD38qCO1E_Ja9Ys-THemXA251LZKwAitu1IVZnRdcf11vmzn0yerNcMYMHMT2zHnt6gllI_lEIT02iWa_546pKzoEnRrJatJI4biJGAJVb0m7FTmzZm_34zCaTWNezm7iIXRJITcRGAJYHNcJrmuLLXPKYZHKqMy6Vz4Y0soHwYxCYWt9Ko2sVwvq9kb4TWOoCki65-e7DDXS67RYUtM4kMHXXpB-Jqb9r75BF5GYw64M6m5UTDa-yoB7EHRx_EDG6Np3ftVIyvbIoFQ-3U8tE5oeFoKxbVHMTPSqv4t0DyHNw-p_rOIsA", "state"=>"d33048139dbaedd55887d2d0260862f2bb330e5a815b6e41"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."fb_uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["fb_uid", "10211244432418247"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-07-20 14:26:08.139112"], ["last_sign_in_at", "2017-07-20 14:15:21.371556"], ["sign_in_count", 15], ["updated_at", "2017-07-20 14:26:08.140088"], ["id", 1]]
+  [1m[35m (56.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms (ActiveRecord: 57.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:26:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.3ms)
+  Rendered route/_new_route.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:26:08 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:27:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (1.4ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.9ms)
+  Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:27:49 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-20 16:28:14 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (0.7ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.8ms)
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-20 16:28:14 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+

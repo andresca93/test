@@ -20,3 +20,5 @@
 //= require application/app_azioni_forms.js
 //= require application/app_azioni_users.js
 //= require application/app_azioni_routes.js
+//= require application/app_azioni_stages.js
+
