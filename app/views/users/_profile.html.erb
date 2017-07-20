@@ -1,0 +1,5 @@
+<ul>
+	<li ng-if="ctl.is_logged()">
+		<%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+	</li>
+</ul>

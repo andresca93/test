@@ -13,9 +13,8 @@
 //  LIBRERIE
 //= require jquery
 //= require jquery_ujs
-//= require angular
+//= require angular/angular.min.js
 //
 //  ANGULAR
-//= require application/app.js
 //= require application/app_controller.js
-
+//= require application/app_azioni_users.js
