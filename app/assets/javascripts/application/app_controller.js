@@ -14,15 +14,16 @@ app.controller('AppCtrl', function($scope, $http, $location) {
 		}, my_timeout); 
 	};
 
+	// MODULI
+	app.azioni_forms(ctl, $scope);
+	app.azioni_users(ctl, $scope, $http);
+	app.azioni_routes(ctl, $scope, $http);
+	app.azioni_stages(ctl, $scope, $http);
+
 	// function to set the enviroment to show
 	ctl.changeCurrentElement = function(new_elem) {
 		if (!new_elem) return ;
 		ctl.current_elem = new_elem;
-		if (new_elem == "index") {
-			// imposto variabili per index
-		} else if (new_elem == "profile") {
-			// imposto variabili per profilo
-		}
 		console.log("current_elem: ", new_elem);
 		ctl.apply();
 	};
@@ -32,8 +33,10 @@ app.controller('AppCtrl', function($scope, $http, $location) {
 	ctl.locationHashChanged = function() {
 		if (ctl.location_hash == "index" || ctl.location_hash == "")
 			ctl.changeCurrentElement("index")
-		else if (ctl.location_hash == "profile")
-			ctl.changeCurrentElement("profile")
+		else if (ctl.location_hash == "profile") {
+			ctl.changeCurrentElement("profile") 
+			console.log("VAD AL PROFILO");
+		}
 		else if (ctl.location_hash == "new_route")
 			ctl.changeCurrentElement("new_route")
 		else
@@ -49,12 +52,5 @@ app.controller('AppCtrl', function($scope, $http, $location) {
 			ctl.locationHashChanged();
 		};
 	});
-
-	// MODULI
-	app.azioni_forms(ctl, $scope);
-	app.azioni_users(ctl, $scope, $http);
-	app.azioni_routes(ctl, $scope, $http);
-	app.azioni_stages(ctl, $scope, $http);
-
 
 });

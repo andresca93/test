@@ -1,5 +1,5 @@
 app.azioni_users = function(ctl, $scope, $http){
-  // user object
+  // current user object
   ctl.user = {
     checked:  false,
     id:       undefined,
@@ -29,11 +29,17 @@ app.azioni_users = function(ctl, $scope, $http){
       ctl.user.city     = (response.data.city     != undefined) ? response.data.city     : undefined;
       ctl.user.fb_email = (response.data.fb_email != undefined) ? response.data.fb_email : undefined;
       ctl.user.gl_email = (response.data.gl_email != undefined) ? response.data.gl_email : undefined;
+      ctl.init_user_profile();
       console.log("USER: ", ctl.user);
     }, function errorCallback(response) {
       ctl.user.checked  = true;
       console.log("Error", response);
     });
+  };
+
+  ctl.init_user_profile = function() {
+    // inizializzo le informazioni utili al profilo utente
+    ctl.get_user_routes();
   };
 
   // return true if is a logged user

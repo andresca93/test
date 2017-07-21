@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   end
 
   resources :route, :only => [:index] do
-    get :new_route, :on => :collection
+    get :new_route,      :on => :collection
+    get :get_user_routes, :on => :collection
   end
 
   resources :stage, :only => [:index] do
