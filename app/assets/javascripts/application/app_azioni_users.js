@@ -9,7 +9,7 @@ app.azioni_users = function(ctl, $scope, $http){
     country:  undefined,
     city:     undefined,
     fb_email: undefined,
-    gl_email: undefined
+    gl_email: undefined,
   };
 
   // function to check user's status through angular ajax request

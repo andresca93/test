@@ -11,11 +11,14 @@ app.azioni_stages = function(ctl, $scope, $http){
 
 	ctl.new_stage = function () {
 		if (!ctl.is_logged()) return ;
-		if (!ctl.checkNewRouteForm()) return ;
+    if (!ctl.is_selected_route()) return ;
+    // TODO
+    //if (!ctl.checkNewStageForm()) return ;
 		$http({
       url:      '/stage/new_stage',
       method:   "GET",
       params:   { 
+        route_id:     ctl.route.id,
         quest_title:  ctl.stage_quest_title, 
         quest_descr:  ctl.stage_quest_descr, 
         lat:          ctl.stage_lat,
