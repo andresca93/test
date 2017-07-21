@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   end
 
   resources :stage, :only => [:index] do
-    get :new_stage, :on => :collection
+    get :new_stage,          :on => :collection
+    get :get_stage_by_route, :on => :collection
   end
 
 end

@@ -36,7 +36,6 @@ app.azioni_routes = function(ctl, $scope, $http){
   ctl.user_routes_loaded=false;
   ctl.get_user_routes = function() {
     if (!ctl.is_logged()) return ;
-    console.log("aaaaaaaaaaa");
     $http({
       url:      '/route/get_user_routes',
       method:   "GET",
@@ -45,12 +44,19 @@ app.azioni_routes = function(ctl, $scope, $http){
     function successCallback(response) {
       ctl.user_routes_loaded=true;
       ctl.user_routes = response.data;
-      ctl.apply();
       console.log("MY_ROUTES: ", ctl.user_routes);
     }, function errorCallback(response) {
       console.log("Error", response);
     });
   };
+
+  ctl.chose_route = function(route) {
+    if (!is_logged()) return ;
+    ctl.route.id     = route.id;
+    ctl.route.title  = route.title;
+    ctl.route.descr  = route.descr;
+    ctl.route.status = route.status;
+  }
 
   ctl.is_selected_route = function() {
     return (ctl.route.id != undefined) ? true : false; 

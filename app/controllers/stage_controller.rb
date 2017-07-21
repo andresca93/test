@@ -1,4 +1,4 @@
-class RouteController < ApplicationController
+class StageController < ApplicationController
 	protect_from_forgery with: :exception
 
 	def new_stage
@@ -29,9 +29,24 @@ class RouteController < ApplicationController
 		return render :json => []
 	end
 
+	def get_stage_by_route
+		set_access_control
+		if is_logged_user!
+			if (params[:route_id])
+				route_id = params[:route_id].to_i
+				if (result = Stage.where(:route_id => route_id))
+					debugger
+					return render :json => result
+				end
+			end
+		end
+		return render :json => []
+	end
+
 	def edit_stage
 		set_access_control
 		if is_logged_user!
 			
 		end
 	end
+end

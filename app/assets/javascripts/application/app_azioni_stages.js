@@ -40,4 +40,28 @@ app.azioni_stages = function(ctl, $scope, $http){
       console.log("Error", response);
     });
 	};
+
+  // get all stage of selected route
+  ctl.route_stages=[];
+  ctl.is_route_stage_loaded=false;
+  ctl.get_stage_by_route = function() {
+    if (!ctl.is_logged()) return ;
+    if (!ctl.is_selected_route()) return ;
+    $http({
+      url:      '/stage/get_stage_by_route',
+      method:   "GET",
+      params:   { 
+        route_id: ctl.route.id
+      },
+      dataType: "json"
+    }).then(
+    function successCallback(response) {
+      ctl.is_route_stage_loaded=true;
+      ctl.route_stages=response.data;
+      console.log("SELECTED_ROUTE_STAGES: ", ctl.route_stages);
+    }, function errorCallback(response) {
+      ctl.is_route_stage_loaded=true;
+      console.log("Error", response);
+    });   
+  };
 };
