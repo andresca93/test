@@ -13,6 +13,7 @@
 //  LIBRERIE
 //= require jquery
 //= require jquery_ujs
+//= require materialize
 //= require angular/angular.min.js
 //
 //  ANGULAR
