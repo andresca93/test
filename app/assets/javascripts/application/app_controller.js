@@ -1,6 +1,6 @@
-var app = angular.module('app', ['ngMap','NavigatorGeolocation']);
+var app = angular.module('app', ['ngMap']);
 
-app.controller('AppCtrl', function($scope, $http, $location) {
+app.controller('AppCtrl', function($scope, $http, $location, NgMap ) {
 	var ctl = this;
 	// current hash in ur
 	ctl.location_hash = $location.hash();
@@ -19,7 +19,7 @@ app.controller('AppCtrl', function($scope, $http, $location) {
 	app.azioni_users(ctl, $scope, $http);
 	app.azioni_routes(ctl, $scope, $http);
 	app.azioni_stages(ctl, $scope, $http);
-	app.azioni_mappa(ctl,ngMap,NavigatorGeolocation);
+	//app.azioni_mappa(ctl,ngMap,NavigatorGeolocation);
 	// function to set the enviroment to show
 	ctl.changeCurrentElement = function(new_elem) {
 		if (!new_elem) return ;

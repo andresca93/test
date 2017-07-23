@@ -1,5 +1,5 @@
-app.azioni_mappa = function(ctl,ngMap,NavigatorGeolocation){
+/*app.azioni_mappa = function(ctl,ngMap,NavigatorGeolocation){
 
 
 	
-}
+}*/

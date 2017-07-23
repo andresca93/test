@@ -19,4 +19,5 @@ Rails.application.routes.draw do
     get :get_stage_by_route, :on => :collection
   end
 
+
 end

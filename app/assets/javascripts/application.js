@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require materialize
 //= require angular/angular.min.js
+//= require ngmap/build/scripts/ng-map.min.js
 //
 //  ANGULAR
 //= require application/app_controller.js
