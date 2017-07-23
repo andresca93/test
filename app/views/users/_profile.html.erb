@@ -1,5 +1,8 @@
-<ul>
-	<li ng-if="ctl.is_logged()">
-		<%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-	</li>
-</ul>
+<div class="profile" ng-if="ctl.is_logged()">
+	profilo utente di {{ctl.user.email}}<br>
+	<a href="#new_route">Crea un nuovo percorso</a><br>
+	<a rel="nofollow" data-method="delete" href="/users/sign_out">Logout</a>       
+	<%= render :partial => "/users/user_routes" %>
+</div>
+<%= render :partial => "/users/unauth_user" %>
+

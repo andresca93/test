@@ -23,6 +23,17 @@ class RouteController < ApplicationController
 		return render :json => []
 	end
 
+	def get_user_routes
+		set_access_control
+		if is_logged_user!
+			if (result = Route.where(:user_id => current_user.id))
+				return render :json => result
+			end
+			return render :json => []
+		end
+		return render :json => []
+	end
+
 	def edit_route
 		set_access_control
 		if is_logged_user!

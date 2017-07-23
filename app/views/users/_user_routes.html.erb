@@ -1,0 +1,9 @@
+<div class="user-routes" ng-if="ctl.user_routes_loaded">
+	<div ng-repeat="r in ctl.user_routes">
+		{{r.title}}
+	</div>
+</div>
+<div class="user-routes" ng-if="!ctl.user_routes_loaded">
+	Loading...
+</div>
+

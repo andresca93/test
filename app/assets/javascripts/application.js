@@ -13,6 +13,7 @@
 //  LIBRERIE
 //= require jquery
 //= require jquery_ujs
+//= require materialize
 //= require angular/angular.min.js
 //
 //  ANGULAR
@@ -21,3 +22,4 @@
 //= require application/app_azioni_users.js
 //= require application/app_azioni_routes.js
 //= require application/app_azioni_mappa.js
+//= require application/app_azioni_stages.js
