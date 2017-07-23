@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngMap','NavigatorGeolocation']);
 
 app.controller('AppCtrl', function($scope, $http) {
 	var ctl = this;
@@ -30,6 +30,7 @@ app.controller('AppCtrl', function($scope, $http) {
 	app.azioni_forms(ctl, $scope);
 	app.azioni_users(ctl, $scope, $http);
 	app.azioni_routes(ctl, $scope, $http);
+	app.azioni_mappa(ctl,ngMap,NavigatorGeolocation);
 
 
 });
