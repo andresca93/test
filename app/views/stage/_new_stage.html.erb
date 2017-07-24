@@ -1,4 +1,4 @@
-<div class="new_stage" ng-if="ctl.is_logged()">
-	pannello per la creazione di una nuova tappa
+<div class="new_stage" ng-if="ctl.is_logged() && ctl.is_route_selected()">
+	<%= render :partial => map %>
 </div>
 <%= render :partial => "/users/unauth_user" %>

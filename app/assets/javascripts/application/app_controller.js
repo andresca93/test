@@ -19,6 +19,7 @@ app.controller('AppCtrl', function($scope, $http, $location, NgMap ) {
 	app.azioni_users(ctl, $scope, $http);
 	app.azioni_routes(ctl, $scope, $http);
 	app.azioni_stages(ctl, $scope, $http);
+	app.azioni_mappa(ctl, $scope, NgMap);
 	//app.azioni_mappa(ctl,ngMap,NavigatorGeolocation);
 	// function to set the enviroment to show
 	ctl.changeCurrentElement = function(new_elem) {
