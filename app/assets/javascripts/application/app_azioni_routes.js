@@ -50,13 +50,19 @@ app.azioni_routes = function(ctl, $scope, $http){
     });
   };
 
-  ctl.chose_route = function(route) {
-    if (!is_logged()) return ;
+  ctl.show_route = function(route) {
+    console.log("aaaaa");
+    ctl.choose_route(route);
+    ctl.changeCurrentElement('show_route');
+  };
+
+  ctl.choose_route = function(route) {
+    if (!ctl.is_logged()) return ;
     ctl.route.id     = route.id;
     ctl.route.title  = route.title;
     ctl.route.descr  = route.descr;
     ctl.route.status = route.status;
-  }
+  };
 
   ctl.is_selected_route = function() {
     return (ctl.route.id != undefined) ? true : false; 

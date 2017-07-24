@@ -32452,3 +32452,637 @@ Processing by RouteController#get_user_routes as HTML
 Completed 200 OK in 54ms (Views: 28.6ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-24 14:49:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (2.8ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.9ms)
+  Rendered stage/_new_stage.html.erb (177.0ms)
+  Rendered home/index.html.erb within layouts/application (185.2ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `map' for #<#<Class:0x007f3a3c480fa8>:0x007f3a3c02d0c8>
+Did you mean?  tap):
+    1: <div class="new_stage" ng-if="ctl.is_logged() && ctl.is_route_selected()">
+    2: 	<%= render :partial => map %>
+    3: </div>
+    4: <%= render :partial => "/users/unauth_user" %>
+  
+app/views/stage/_new_stage.html.erb:2:in `_app_views_stage__new_stage_html_erb__223469194486082827_47335621434160'
+app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__346001402012440832_69944048094880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+Started GET "/" for 127.0.0.1 at 2017-07-24 14:50:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (1.4ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.6ms)
+  Rendered stage/_new_stage.html.erb (3.8ms)
+  Rendered home/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial home/_map, application/_map with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/daaab/Scrivania/test/app/views"
+  * "/var/lib/gems/2.3.0/gems/devise-4.3.0/app/views"
+):
+    1: <div class="new_stage" ng-if="ctl.is_logged() && ctl.is_route_selected()">
+    2: 	<%= render :partial => "map" %>
+    3: </div>
+    4: <%= render :partial => "/users/unauth_user" %>
+  
+app/views/stage/_new_stage.html.erb:2:in `_app_views_stage__new_stage_html_erb__223469194486082827_69944252674560'
+app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__346001402012440832_69944247251660'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+Started GET "/" for 127.0.0.1 at 2017-07-24 14:50:50 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.3ms)
+  Rendered users/_user_routes.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (3.0ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.2ms)
+  Rendered stage/_map.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (2.0ms)
+  Rendered home/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 240ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 14:50:50 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 14:50:50 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 24ms (Views: 11.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:00:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (1.5ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.6ms)
+  Rendered route/_show_route.html.erb (0.2ms)
+  Rendered stage/_map.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (2.5ms)
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 492ms (Views: 490.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:00:14 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 1.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:00:14 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 29ms (Views: 12.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:01:12 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.7ms)
+  Rendered users/_user_routes.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.6ms)
+  Rendered users/_profile.html.erb (3.6ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.6ms)
+  Rendered route/_show_route.html.erb (0.4ms)
+  Rendered stage/_map.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (3.0ms)
+  Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 193ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:01:12 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:01:12 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:01:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.5ms)
+  Rendered users/_user_routes.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.5ms)
+  Rendered users/_profile.html.erb (3.6ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.2ms)
+  Rendered route/_show_route.html.erb (0.3ms)
+  Rendered stage/_map.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (2.9ms)
+  Rendered home/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 209ms (Views: 206.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:01:42 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:01:42 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:02:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.4ms)
+  Rendered users/_user_routes.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.3ms)
+  Rendered users/_profile.html.erb (2.5ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.9ms)
+  Rendered route/_show_route.html.erb (0.3ms)
+  Rendered stage/_map.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 520ms (Views: 519.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:02:03 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 2.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:02:04 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 44ms (Views: 21.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:03:00 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.4ms)
+  Rendered users/_user_routes.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.4ms)
+  Rendered users/_profile.html.erb (2.7ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.0ms)
+  Rendered route/_show_route.html.erb (0.3ms)
+  Rendered stage/_map.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (2.0ms)
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:03:00 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:03:00 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.5ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:04:00 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.6ms)
+  Rendered users/_user_routes.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (1.0ms)
+  Rendered users/_profile.html.erb (4.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered route/_new_route.html.erb (2.9ms)
+  Rendered route/_show_route.html.erb (0.4ms)
+  Rendered stage/_map.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (3.5ms)
+  Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 217ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:04:00 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:04:00 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:08:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (1.5ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.5ms)
+  Rendered route/_show_route.html.erb (0.4ms)
+  Rendered stage/_map.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (2.5ms)
+  Rendered home/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 426ms (Views: 424.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:08:15 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 1.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:08:16 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 38ms (Views: 15.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:10:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (1.5ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered route/_new_route.html.erb (1.2ms)
+  Rendered route/_show_route.html.erb (0.8ms)
+  Rendered stage/_map.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (2.6ms)
+  Rendered home/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 261ms (Views: 259.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:10:41 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 2.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:10:41 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 40ms (Views: 21.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:11:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.3ms)
+  Rendered users/_user_routes.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (2.2ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (0.6ms)
+  Rendered route/_show_route.html.erb (0.2ms)
+  Rendered stage/_map.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (1.4ms)
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 276ms (Views: 275.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:11:55 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 2.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:11:56 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.8ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 47ms (Views: 24.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:15:49 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.2ms)
+  Rendered users/_user_routes.html.erb (0.2ms)
+  Rendered users/_unauth_user.html.erb (0.2ms)
+  Rendered users/_profile.html.erb (1.6ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered route/_new_route.html.erb (2.2ms)
+  Rendered route/_show_route.html.erb (0.4ms)
+  Rendered stage/_map.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (3.4ms)
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 478ms (Views: 477.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:15:50 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 1.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:15:50 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 45ms (Views: 22.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:16:54 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.5ms)
+  Rendered users/_user_routes.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.5ms)
+  Rendered users/_profile.html.erb (3.4ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.5ms)
+  Rendered route/_show_route.html.erb (0.5ms)
+  Rendered stage/_map.html.erb (0.4ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (2.3ms)
+  Rendered home/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 201ms (Views: 199.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:16:54 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:16:54 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stage/" for 127.0.0.1 at 2017-07-24 15:18:26 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for StageController):
+  
+actionpack (5.0.4) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+Started GET "/stage/new_stage" for 127.0.0.1 at 2017-07-24 15:18:32 +0200
+Processing by StageController#new_stage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stage/" for 127.0.0.1 at 2017-07-24 15:18:38 +0200
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for StageController):
+  
+actionpack (5.0.4) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.4) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.4) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.4) lib/action_dispatch/routing/route_set.rb:725:in `call'
+omniauth (1.6.1) lib/omniauth/strategy.rb:189:in `call!'
+omniauth (1.6.1) lib/omniauth/strategy.rb:167:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.4) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.4) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.4) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.4) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.4) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:18:44 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.7ms)
+  Rendered users/_user_routes.html.erb (1.3ms)
+  Rendered users/_unauth_user.html.erb (0.7ms)
+  Rendered users/_profile.html.erb (5.2ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.5ms)
+  Rendered route/_show_route.html.erb (0.4ms)
+  Rendered stage/_map.html.erb (1.3ms)
+  Rendered users/_unauth_user.html.erb (0.1ms)
+  Rendered stage/_new_stage.html.erb (6.3ms)
+  Rendered home/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:18:44 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:18:44 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-24 15:18:53 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_index.html.erb (0.5ms)
+  Rendered users/_user_routes.html.erb (0.5ms)
+  Rendered users/_unauth_user.html.erb (0.6ms)
+  Rendered users/_profile.html.erb (3.8ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered route/_new_route.html.erb (1.2ms)
+  Rendered route/_show_route.html.erb (0.5ms)
+  Rendered stage/_map.html.erb (0.3ms)
+  Rendered users/_unauth_user.html.erb (0.0ms)
+  Rendered stage/_new_stage.html.erb (2.1ms)
+  Rendered home/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/user_check" for 127.0.0.1 at 2017-07-24 15:18:53 +0200
+Processing by UsersController#user_check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/route/get_user_routes" for 127.0.0.1 at 2017-07-24 15:18:53 +0200
+Processing by RouteController#get_user_routes as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."user_id" = ?[0m  [["user_id", 1]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+

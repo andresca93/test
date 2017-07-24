@@ -1,6 +1,6 @@
 <div class="user-routes" ng-if="ctl.user_routes_loaded">
 	<div ng-repeat="r in ctl.user_routes">
-		{{r.title}}
+		<div ng-click="ctl.show_route(r)">{{r.title}}</div>
 	</div>
 </div>
 <div class="user-routes" ng-if="!ctl.user_routes_loaded">

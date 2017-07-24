@@ -25,6 +25,8 @@ app.controller('AppCtrl', function($scope, $http, $location, NgMap ) {
 	ctl.changeCurrentElement = function(new_elem) {
 		if (!new_elem) return ;
 		ctl.current_elem = new_elem;
+		if (ctl.current_elem == "show_route") 
+			$location.hash('show_route'); 
 		console.log("current_elem: ", new_elem);
 		ctl.apply();
 	};
@@ -34,12 +36,12 @@ app.controller('AppCtrl', function($scope, $http, $location, NgMap ) {
 	ctl.locationHashChanged = function() {
 		if (ctl.location_hash == "index" || ctl.location_hash == "")
 			ctl.changeCurrentElement("index")
-		else if (ctl.location_hash == "profile") {
+		else if (ctl.location_hash == "profile") 
 			ctl.changeCurrentElement("profile") 
-			console.log("VAD AL PROFILO");
-		}
 		else if (ctl.location_hash == "new_route")
 			ctl.changeCurrentElement("new_route")
+		else if (ctl.location_hash == "show_route")
+			ctl.changeCurrentElement("show_route")
 		else
 			ctl.changeCurrentElement("index")
 	};
